@@ -23,12 +23,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
+      - name: Read .nvmrc
+        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
         id: nvm
-      - name: Setup Node
-        uses: actions/setup-node@v3
-         with:
-           node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
+
+      - name: Use Node.js (.nvmrc)
+        uses: actions/setup-node@v1
+        with:
+          node-version: "${{ steps.nvm.outputs.NVMRC }}"
       - name: Install Yarn
         run: npm install -g yarn
       - name: Checkout
