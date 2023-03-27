@@ -25,18 +25,14 @@ jobs:
     steps:
       - run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
         id: nvm
-       ##
       - name: Setup Node
         uses: actions/setup-node@v3
          with:
            node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
-        ##
       - name: Install Yarn
         run: npm install -g yarn
-        ##
       - name: Checkout
         uses: actions/checkout@v3
-        ## 
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -54,12 +50,10 @@ jobs:
             echo "Unable to determine packager manager"
             exit 1
           fi
-        ##
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
           static_site_generator: next
-        ##
       - name: Restore cache
         uses: actions/cache@v3
         with:
