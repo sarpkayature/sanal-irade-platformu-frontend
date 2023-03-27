@@ -27,8 +27,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '${{ steps.nvm.outputs.NVMRC }}'
-      - name: Install Yarn
-        run: npm install -g yarn
+      - name: GitHub Action for Yarn
+        uses: Borales/actions-yarn@v4.2.0
       - name: Checkout
         uses: actions/checkout@v3
       - name: Detect package manager
