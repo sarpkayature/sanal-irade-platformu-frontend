@@ -1,1 +1,1 @@
-# sanal-irade-platformu-frontend
+# SANAL IRADE PLATFORMU
