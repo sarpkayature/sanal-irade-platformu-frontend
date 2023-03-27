@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: '18.15.0'
       - name: Install Yarn
-        run: npm install -g yarn@3.3.0
+        run: npm install -g yarn@latest
       - name: Detect package manager
         id: detect-package-manager
         run: |
