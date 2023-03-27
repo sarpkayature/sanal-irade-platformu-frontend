@@ -3,7 +3,7 @@ name: Deploy Sanal Irade Platformu to GitHub Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["development"]
+    branches: ['development']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -13,7 +13,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 jobs:
@@ -26,12 +26,11 @@ jobs:
       - name: Use Node.js (.nvmrc)
         uses: actions/setup-node@v1
         with:
-          node-version: "${{ steps.nvm.outputs.NVMRC }}"
+          node-version: '${{ steps.nvm.outputs.NVMRC }}'
       - name: Install Yarn
         run: npm install -g yarn
       - name: Checkout
         uses: actions/checkout@v3
-         with: git checkout development && git pull origin development
       - name: Detect package manager
         id: detect-package-manager
         run: |
