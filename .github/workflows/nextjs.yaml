@@ -26,8 +26,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.15.0'
-      - name: GitHub Action for Yarn
-        uses: Borales/actions-yarn@v4.2.0
+      - name: Install Yarn
+        run: npm install -g yarn
       - name: Detect package manager
         id: detect-package-manager
         run: |
