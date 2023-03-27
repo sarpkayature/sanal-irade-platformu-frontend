@@ -1,28 +1,28 @@
-name: Yarn Lock Update Check
-
+name: Node.JS CI - Check Lint and Code Format
 on:
   push:
-    branches: ['development']
+    branches: [production, development]
   pull_request:
-    branches: ['development']
-
+    branches: [production, development]
+permissions:
+  contents: read
 jobs:
   build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
-      - name: Install Yarn
-        run: npm install -g yarn@latest
-      - name: Build with Next.js
-        run: yarn build
+      - name: Build
+        run: |
+          yarn
+      - name: Lint Check
+        if: ${{ success() }}
+        run: |
+          yarn lint
