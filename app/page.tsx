@@ -1,6 +1,6 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import VectorMap from './components/vector-map/VectorMap';
+import VectorMap from "./components/vector-map/VectorMap";
 
 export default function Home() {
   return (
