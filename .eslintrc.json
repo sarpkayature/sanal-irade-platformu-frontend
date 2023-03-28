@@ -1,4 +1,6 @@
 {
   "extends": ["next/core-web-vitals", "eslint:recommended"],
-  "rules": {}
+  "rules": {
+    "no-html-link-for-pages": "off"
+  }
 }

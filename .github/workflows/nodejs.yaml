@@ -1,9 +1,9 @@
 name: Node.JS CI - Check Lint and Code Format
 on:
   push:
-    branches: [production, development]
+    branches: [production, development, qa]
   pull_request:
-    branches: [production, development]
+    branches: [production, development, qa]
 permissions:
   contents: read
 jobs:
@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
+          cache: "yarn"
       - name: Build
         run: |
           yarn
