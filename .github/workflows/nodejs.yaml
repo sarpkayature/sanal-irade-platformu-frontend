@@ -26,3 +26,7 @@ jobs:
         if: ${{ success() }}
         run: |
           yarn lint
+      - name: Code Format Check
+        if: ${{ success() }}
+        run: |
+          yarn prettier

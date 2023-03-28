@@ -4,25 +4,26 @@
 
   svg {
     stroke: #fff;
+
     path {
       fill: #a82b2b;
       cursor: pointer;
       outline: none;
 
       &:hover {
-        fill: rgba(168, 43, 43, 0.83);
+        fill: rgb(168 43 43 / 83%);
       }
 
       &:focus {
-        fill: rgba(168, 43, 43, 0.6);
+        fill: rgb(168 43 43 / 60%);
       }
 
-      &[aria-checked='true'] {
-        fill: rgba(56, 43, 168, 1);
+      &[aria-checked="true"] {
+        fill: rgb(56 43 168 / 100%);
       }
 
-      &[aria-current='true'] {
-        fill: rgba(56, 43, 168, 0.83);
+      &[aria-current="true"] {
+        fill: rgb(56 43 168 / 83%);
       }
     }
   }
