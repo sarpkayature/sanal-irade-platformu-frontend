@@ -3,7 +3,7 @@ name: Deploy Sanal Irade Platformu to GitHub Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ['development']
+    branches: ["qa"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -13,7 +13,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18.15.0'
+          node-version: "18.15.0"
       - name: Install Yarn
         run: npm install -g yarn@latest
       - name: Detect package manager
