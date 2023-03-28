@@ -1,4 +1,4 @@
 {
-  "*.ts[x]": ["yarn lint:fix", "yarn prettier:fix"],
+  "app/**/*{.ts[x]}": ["yarn lint:fix", "yarn prettier:fix"],
   "*.module.scss": ["yarn lint:style"]
 }
