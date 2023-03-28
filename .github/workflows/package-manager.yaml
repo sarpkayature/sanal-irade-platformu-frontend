@@ -1,4 +1,4 @@
-name: notice-yarn-changes
+name: Package Manager CI - Check yarn.lock changes
 on:
   pull_request:
     branches: [production, development]
