@@ -28,3 +28,14 @@
     }
   }
 }
+
+.tooltip {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
