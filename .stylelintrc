@@ -1,1 +1,1 @@
-{ "extends": "stylelint-config-standard-scss", "rules": { "color-function": "legacy" } }
+{ "extends": "stylelint-config-standard-scss", "rules": { "at-rule-no-unknown": null } }
