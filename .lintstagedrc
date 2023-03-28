@@ -1,4 +1,4 @@
 {
-  "app/*.ts[x]": ["prettier --write", "eslint --fix"],
-  "app/*.module.[s]css": ["stylelint --fix"]
+  "*.ts[x]": ["prettier --write", "eslint --fix"],
+  "*.module.[s]css": ["yarn lint:style"]
 }
