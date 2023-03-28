@@ -1,5 +1,6 @@
 {
-  "name": "sanal-irade-platformu-frontend",
+  "name": "Sanal Irade Platformu",
+  "description": "Sanal Irade Platformu Frontend Projesi",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,10 +15,12 @@
     "@hookform/resolvers": "^3.0.0",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.14",
+    "@south-paw/react-vector-maps": "^3.2.0",
     "next": "^13.2.5-canary.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.8",
+    "sass": "^1.60.0",
     "typescript": "^5.0.2",
     "yup": "^1.0.2"
   },
