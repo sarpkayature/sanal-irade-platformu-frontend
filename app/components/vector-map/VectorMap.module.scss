@@ -18,11 +18,11 @@
         fill: rgb(168 43 43 / 60%);
       }
 
-      &[aria-checked="true"] {
+      &[aria-checked='true'] {
         fill: rgb(56 43 168 / 100%);
       }
 
-      &[aria-current="true"] {
+      &[aria-current='true'] {
         fill: rgb(56 43 168 / 83%);
       }
     }
