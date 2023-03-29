@@ -5,7 +5,6 @@ export function DButton({ content, props }: { content: string; props?: ButtonPro
   return (
     <Button
       {...props}
-      variant="contained"
       sx={{
         backgroundColor: 'secondary.main',
         color: 'primary.main',
