@@ -1,0 +1,41 @@
+.map-container {
+  margin: 1rem auto;
+  width: 800px;
+
+  svg {
+    stroke: #fff;
+
+    path {
+      fill: #a82b2b;
+      cursor: pointer;
+      outline: none;
+
+      &:hover {
+        fill: rgb(168 43 43 / 83%);
+      }
+
+      &:focus {
+        fill: rgb(168 43 43 / 60%);
+      }
+
+      &[aria-checked='true'] {
+        fill: rgb(56 43 168 / 100%);
+      }
+
+      &[aria-current='true'] {
+        fill: rgb(56 43 168 / 83%);
+      }
+    }
+  }
+}
+
+.tooltip {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
