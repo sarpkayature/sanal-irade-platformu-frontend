@@ -13,7 +13,7 @@ export function VectorMaps() {
     () => VectorMapInitialState
   );
 
-  const { hovered, focused, clicked } = state;
+  const { hovered } = state;
 
   const layerProps = {
     onMouseEnter: ({ target }: any) => {
