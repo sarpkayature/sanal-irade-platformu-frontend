@@ -16,14 +16,15 @@ export function VectorMaps() {
   const { hovered, focused, clicked } = state;
 
   const layerProps = {
-    onMouseEnter: ({ target }) =>
+    onMouseEnter: ({ target }: any) => {
       dispatch({
         type: 'HOVER',
         payload: {
-          name: target.attributes.name.value,
+          name: target!.attributes.name.value,
           id: target.attributes.id.value,
         },
-      }),
+      });
+    },
     onMouseLeave: () =>
       dispatch({
         type: 'HOVER',
@@ -32,7 +33,7 @@ export function VectorMaps() {
           id: 'None',
         },
       }),
-    onFocus: ({ target }) =>
+    onFocus: ({ target }: any) =>
       dispatch({
         type: 'FOCUS',
         payload: {
@@ -48,7 +49,7 @@ export function VectorMaps() {
           id: 'None',
         },
       }),
-    onClick: ({ target }) =>
+    onClick: ({ target }: any) =>
       dispatch({
         type: 'CLICK',
         payload: {
