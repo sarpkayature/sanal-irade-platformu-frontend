@@ -1,4 +1,4 @@
-import { VectorMaps, HorizontalHeader } from './components';
+import { VectorMaps, HorizontalHeader } from '../components';
 
 export default function Home() {
   return (
