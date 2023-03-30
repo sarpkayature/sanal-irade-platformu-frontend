@@ -1,7 +1,9 @@
+import { VerticalHeader } from '../components';
+
 export default function Witness() {
   return (
-    <div>
-      <h1>Witness</h1>
-    </div>
+    <>
+      <VerticalHeader loginType="witness" />
+    </>
   );
 }
