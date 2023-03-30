@@ -17,6 +17,7 @@ const initI18next = async (lng: 'en' | 'tr', ns: 'translation') => {
 export async function useTranslation(lng, ns, options = {}) {
   const i18nextInstance = await initI18next(lng, ns);
   return {
+    // @ts-ignore
     t: i18nextInstance.getFixedT(lng, Array.isArray(ns) ? ns[0] : ns, options.keyPrefix),
     i18n: i18nextInstance,
   };
