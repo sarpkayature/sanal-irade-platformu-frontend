@@ -5,6 +5,7 @@ export default async function Witness({ params: { lng } }: { params: { lng: stri
   const { t } = await useTranslation(lng, ['witness']);
 
   const translations = {
+    // @ts-ignore
     login: t('witness.login'),
     request: t('witness.request_form'),
   };
