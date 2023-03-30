@@ -2,21 +2,7 @@
 
 import Image from 'next/image';
 import { Button, ButtonGroup, Container, Grid, Typography } from '@mui/material';
-
-const buttonProps = [
-  {
-    href: '/witness',
-    text: 'Müşahit Girişi',
-  },
-  {
-    href: '/executive',
-    text: 'Yönetici Girişi',
-  },
-  {
-    href: '/witness/request',
-    text: 'Müşahit Talebi',
-  },
-];
+import { buttonProps } from './contants';
 
 export function HorizontalHeader({
   isBtnGroupActive = false,
@@ -36,7 +22,13 @@ export function HorizontalHeader({
     >
       <Grid container justifyContent="center" alignItems="center" spacing={3}>
         <Grid item alignSelf="center">
-          <Image src={'/assets/logos/sp_with_firm.png'} alt="Logo" width={275} height={150} />
+          <Image
+            src={'/assets/logos/sp_with_firm.png'}
+            alt="Logo"
+            width={275}
+            height={150}
+            priority
+          />
         </Grid>
         <Typography variant="h6" component="h3" align="center" color="black" flexGrow={2}>
           {content}
