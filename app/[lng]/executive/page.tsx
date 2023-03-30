@@ -5,6 +5,7 @@ export default async function Executive({ params: { lng } }: { params: { lng: st
   const { t } = await useTranslation(lng, ['executive']);
 
   const translations = {
+    // @ts-ignore
     login: t('executive.login'),
   };
 
