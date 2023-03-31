@@ -16,7 +16,7 @@
  - [Installation](#installation)
  - [Technologies](#technologies)
  - [Contributing](#contributing)
-  - [License](#license)
+ - [License](#license)
 
 <h2 id="documentation"> 📝 Documentation </h2>
 

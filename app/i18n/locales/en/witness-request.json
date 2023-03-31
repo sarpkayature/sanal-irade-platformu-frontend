@@ -1,0 +1,13 @@
+{
+  "witness_informations": "Witness Informations",
+  "name": "Name",
+  "surname": "Surname",
+  "email": "Email",
+  "phone": "Phone",
+  "address": "Address",
+  "city": "City",
+  "district": "District",
+  "identityNumber": "Identity Number",
+  "birthDate": "Birth Date",
+  "submit": "Submit"
+}

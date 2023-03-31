@@ -1,5 +1,6 @@
 'use client';
 
+import { ReactNode } from 'react';
 import Image from 'next/image';
 import { Button, ButtonGroup, Container, Grid, Typography } from '@mui/material';
 import { buttonProps } from './contants';
@@ -7,9 +8,11 @@ import { buttonProps } from './contants';
 export function HorizontalHeader({
   isBtnGroupActive = false,
   content = 'CUMHURBAŞKANLIĞI VE MİLLETVEKİLLİĞİ SEÇİMİ 14 MAYIS 2023',
+  children,
 }: {
   isBtnGroupActive?: boolean;
   content?: string;
+  children: ReactNode;
 }) {
   return (
     <Container
@@ -53,6 +56,7 @@ export function HorizontalHeader({
           </Grid>
         ) : null}
       </Grid>
+      {children && children}
     </Container>
   );
 }

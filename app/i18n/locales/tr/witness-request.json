@@ -1,0 +1,13 @@
+{
+  "witness_informations": "Müşahit Bilgileri",
+  "name": "Ad",
+  "surname": "Soyad",
+  "email": "Email",
+  "phone": "Telefon",
+  "address": "Adres",
+  "city": "Şehir",
+  "district": "Mahalle",
+  "identityNumber": "TC Kimlik No",
+  "birthDate": "Doğum Tarihi",
+  "submit": "Bilgilerimi Onayla"
+}
